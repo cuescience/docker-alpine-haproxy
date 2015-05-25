@@ -4,4 +4,4 @@ ADD haproxy.cfg /etc/haproxy/haproxy.cfg
 EXPOSE 80
 EXPOSE 8080
 VOLUME /etc/haproxy
-CMD ["haproxy", "-d", "-f", "/etc/haproxy/haproxy.cfg"]
+CMD ["haproxy", "-d", "-f", "/etc/haproxy/haproxy.cfg", "-p", "/var/run/haproxy.pid"]
